@@ -1,0 +1,62 @@
+baseURL = "https://gireesh395.github.io/"
+languageCode = "en-us"
+title = "My Learning Log"
+theme = "PaperMod"
+
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  title = "My Learning Log"
+  description = "Notes, projects, and things I've learned"
+  defaultTheme = "auto"
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  disableSpecial1stPost = false
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Gireesh 👋"
+    Content = "This is where I write up what I'm learning — homelab projects, security labs, and things I've built."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/gireesh395"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/gireesh-singh"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
